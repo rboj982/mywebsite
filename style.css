@@ -159,6 +159,11 @@ li:hover {
     padding: 0.1rem 0.8rem;
   }
 }
+@media screen and (orientation: landscape) and (min-width: 350px) {
+  .hero > h1 {
+    margin-top: 5rem;
+  }
+}
 @media screen and (min-width: 850px) {
   .hero-icon {
     padding: 0.1rem 1rem;
@@ -213,6 +218,14 @@ li:hover {
     flex-direction: column;
   }
 }
+@media screen and (orientation: landscape) and (min-width: 350px) {
+  .about-section {
+    height: 120vh;
+  }
+  .about-container {
+    flex-direction: row;
+  }
+}
 @media screen and (min-width: 850px) {
   .about-section {
     background: url(./img/photo-three.jpg);
@@ -223,9 +236,15 @@ li:hover {
     flex-direction: row;
   }
 }
+@media screen and (orientation: landscape) and (min-width: 850px) {
+  .about-section {
+    height: 80vh;
+  }
+}
 @media screen and (min-width: 1150px) {
   .about-section {
     width: 100%;
+    height: 40vh;
   }
   .about-container {
     width: 70%;
