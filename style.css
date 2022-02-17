@@ -37,7 +37,7 @@ body {
 .nav {
   z-index: 1;
   position: absolute;
-  height: 50vh;
+  height: 80.5vh;
   width: 100%;
 }
 .nav-container {
@@ -143,8 +143,8 @@ li:hover {
   background: rgba(255, 255, 255, 0.514);
 }
 .line {
-  background: #023d8a8a;
-  height: 0.2rem;
+  border: 3px solid var(--clr-primery-light);
+  background: var(--clr-primery-light);
   width: 100%;
 }
 @media screen and (min-width: 350px) {
