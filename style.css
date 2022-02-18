@@ -89,7 +89,16 @@ li:hover {
     justify-content: flex-end;
   }
   .nav-logo > img {
+    height: 10rem;
     margin-left: -1.3rem;
+  }
+  .nav-logo {
+    height: 1.5rem;
+  }
+  .nav-logo > img:hover {
+    transition: all linear 0.5s;
+    background: #0076b63b;
+    border-radius: 50%;
   }
   li > a {
     padding: 1px 1px;
@@ -109,7 +118,7 @@ li:hover {
     justify-content: space-between;
   }
   .nav-logo > img {
-    margin-left: -4rem;
+    margin-left: -5rem;
   }
   li > a {
     padding: 5px 20px;
