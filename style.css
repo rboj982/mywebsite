@@ -1,11 +1,12 @@
 /* ====font===== */
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&family=Raleway:wght@600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Raleway:wght@600;900&display=swap");
 /* ======end font======= */
 /* ===== variables ======= */
 :root {
   --clr-primery: #023e8a;
   --clr-primery-light: #0077b6;
-  --clr-gray: #f4f6f8;
+  --clr-secondary-light: #b4d6e9d3;
+  --clr-gray: #f6f8fae7;
   --clr-white: #fff;
   --clr-black: #000;
   --ff-primary: "Raleway", sans-serif;
@@ -13,6 +14,8 @@
   --transition: all 0.3s linear;
   --readius: 1rem;
 }
+/* ====== end of variables ======== */
+/* ====== basic setup ======== */
 body {
   font-family: var(--ff-primary);
   background: var(--clr-white);
@@ -20,7 +23,6 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
-/* ====== end of variables ======== */
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +35,18 @@ body {
   border-radius: var(--readius);
   text-decoration: none;
 }
+h2,
+h3,
+h4 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 900;
+}
+p {
+  font-family: var(--ff-secondary);
+  color: var(--clr-black);
+}
+/* ====== end of basic setup ======== */
 /* ===== Nav-bar ======= */
 .nav {
   z-index: 1;
@@ -103,8 +117,6 @@ li:hover {
 /* ========== end of nav ========== */
 /* ====== Hero section========= */
 .hero {
-  position: relative;
-  top: 0;
   width: 100%;
   height: 80vh;
   background: url(./img/photo-one.jpg);
@@ -179,7 +191,6 @@ li:hover {
     font-size: 1rem;
   }
 }
-
 /* ====== end of hero ====== */
 /* ======= about section ======== */
 .about-section {
@@ -212,8 +223,9 @@ li:hover {
 }
 @media screen and (min-width: 350px) {
   .about-section {
+    flex-wrap: wrap;
     background: var(--clr-gray);
-    height: 110vh;
+    height: 140vh;
   }
   .about-container {
     width: 100%;
@@ -282,11 +294,36 @@ li:hover {
   margin: 1rem;
   padding: 1rem;
   height: 25vh;
-  width: 29vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   background: var(--clr-white);
-  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0.5px #d6dde4;
+}
+.icon-services {
+  color: var(--clr-secondary-light);
+  font-size: 4rem;
+}
+.services-title {
+  font-size: 1.5rem;
+  margin-top: -4.2rem;
+}
+@media screen and (min-width: 350px) {
+  .services {
+    flex-wrap: wrap;
+    height: 160vh;
+    width: 100%;
+  }
+  .services-container {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .services-card-container {
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
 }
