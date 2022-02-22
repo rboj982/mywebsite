@@ -139,7 +139,7 @@ li:hover {
 .hero {
   width: 100%;
   height: 80vh;
-  background: url(./img/photo-one.jpg);
+  background: url(./images/photo-one.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -214,7 +214,7 @@ li:hover {
 /* ====== end of hero ====== */
 /* ======= about section ======== */
 .about-section {
-  background: url(./img/photo-three.jpg);
+  background: url(./images/photo-three.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -444,7 +444,7 @@ li:hover {
   display: flex;
   justify-content: center;
   width: 100%;
-  background: url(./img/photo-four.jpg);
+  background: url(./images/photo-four.jpg);
   background-size: cover;
 }
 .call-container {
@@ -460,6 +460,7 @@ li:hover {
 }
 .call-container > h1 {
   color: var(--clr-white);
+  font-family: var(--ff-secondary);
   text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.534);
   font-size: 1.5rem;
   margin: 0.5rem;
@@ -475,9 +476,8 @@ li:hover {
   }
   .call-container > h1 {
     color: var(--clr-white);
-    text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.534);
-    font-size: 1.5rem;
-    margin: 0.5rem;
+
+    font-size: 2rem;
   }
 }
 /* ==== end of call section ======== */
