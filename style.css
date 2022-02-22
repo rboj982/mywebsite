@@ -442,7 +442,6 @@ li:hover {
 /* ======== call section ======== */
 .call-section {
   display: flex;
-  flex-direction: ;
   justify-content: center;
   width: 100%;
   background: url(./img/photo-four.jpg);
@@ -481,3 +480,4 @@ li:hover {
     margin: 0.5rem;
   }
 }
+/* ==== end of call section ======== */
