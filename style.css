@@ -400,4 +400,41 @@ li:hover {
 .stat {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  padding: 0.8rem;
 }
+.stat > span {
+  margin-top: -1.5rem;
+  margin-right: 1.2rem;
+}
+.stat h1 {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 350px) and (orientation: landscape) {
+  .stat {
+    width: 48%;
+    align-items: baseline;
+  }
+  .statistics-container {
+    width: 72%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .stat {
+    width: 24%;
+    margin: 0 0.1rem;
+  }
+  .statistics-container {
+    width: 72%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+  }
+}
+/* ==== end of statistics section ======== */
