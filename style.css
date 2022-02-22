@@ -445,8 +445,8 @@ li:hover {
   flex-direction: ;
   justify-content: center;
   width: 100%;
-  background-image: url(./img/photo-three.jpg);
-  opacity: 0.2;
+  background: url(./img/photo-four.jpg);
+  background-size: cover;
 }
 .call-container {
   width: 100%;
