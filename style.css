@@ -481,3 +481,66 @@ li:hover {
   }
 }
 /* ==== end of call section ======== */
+/* ===== portfolio section ====== */
+.portfolio {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-container {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+.icon-portfolio {
+  display: flex;
+  justify-content: center;
+  color: var(--clr-secondary-light);
+  font-size: 4rem;
+  margin: 3rem 0;
+}
+.portfolio-title {
+  color: var(--clr-primery-light);
+  text-align: center;
+  margin-top: -5.6rem;
+  margin-bottom: 2rem;
+}
+.portfolio-text {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 350px) and (orientation: portrait) {
+  .portfolio-link-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .port-img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 350px) and (orientation: landscape) {
+  .portfolio-link-container {
+    column-count: 3;
+    width: 100%;
+  }
+  .portfolio-link-container > a {
+    width: 100%;
+    height: auto;
+  }
+  .port-img {
+    width: 25vw;
+    height: 40vh;
+    object-fit: cover;
+    padding: 10px;
+  }
+  .port-img:hover {
+    transform: scale(1.01);
+    transition: all linear 0.5s;
+  }
+}
+/* ===== end of portfolio section ====== */
+/* ===== team section ====== */
