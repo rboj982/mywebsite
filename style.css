@@ -510,6 +510,9 @@ li:hover {
   text-align: center;
   margin-bottom: 2rem;
 }
+.img-gray {
+  filter: grayscale(1);
+}
 
 @media screen and (min-width: 350px) and (orientation: portrait) {
   .portfolio-link-container {
