@@ -561,7 +561,9 @@ li:hover {
   font-size: 4rem;
 }
 .team-title {
-  margin-top: -3.5rem;
+  color: var(--clr-primery-light);
+  font-size: 1.5rem;
+  margin-top: -3.6rem;
   margin-bottom: 2rem;
 }
 .team-card-container {
@@ -594,4 +596,56 @@ li:hover {
   align-self: center;
   width: 30%;
   border: 1px solid var(--clr-secondary-light);
+}
+
+@media screen and (min-width: 350px) and (orientation: landscape) {
+  .team-container {
+    margin: 2rem 0;
+  }
+  .team-card-container {
+    margin: 2.5rem 0;
+    flex-direction: row;
+  }
+  .team-card {
+    margin: 2px;
+  }
+  .team-info {
+    margin-top: -1.2rem;
+    line-height: 1rem;
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .team-container {
+    margin: 2.5rem 0;
+  }
+  .team-text {
+    margin: 2rem 0;
+  }
+}
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .team-container {
+    margin: 2rem 0;
+  }
+  .team-card {
+    margin: 5px;
+  }
+  .team-info {
+    line-height: 1.2rem;
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .team-card {
+    margin: 10px;
+  }
+  .team-info {
+    line-height: 1.5rem;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .team-info {
+    line-height: 1.8rem;
+  }
 }
