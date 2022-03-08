@@ -597,7 +597,6 @@ li:hover {
   width: 30%;
   border: 1px solid var(--clr-secondary-light);
 }
-
 @media screen and (min-width: 350px) and (orientation: landscape) {
   .team-container {
     margin: 2rem 0;
@@ -649,3 +648,4 @@ li:hover {
     line-height: 1.8rem;
   }
 }
+/* ===== end of team section ====== */
