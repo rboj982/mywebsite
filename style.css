@@ -649,3 +649,92 @@ li:hover {
   }
 }
 /* ===== end of team section ====== */
+/* ===== contact section ====== */
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact-container {
+  margin: 40px 0;
+  width: 75%;
+  text-align: center;
+}
+.icon-contact {
+  color: var(--clr-secondary-light);
+  font-size: 4rem;
+}
+.contact-title {
+  color: var(--clr-primery-light);
+  font-size: 1.5rem;
+  margin-top: -3.6rem;
+  margin-bottom: 2rem;
+}
+.contact-card-container {
+  display: flex;
+  flex-direction: column;
+}
+.contact-crd {
+  margin: 5px;
+  background: var(--clr-gray);
+}
+.contact-crd > h3 {
+  color: rgb(54, 54, 54);
+}
+.contact-crd > h4 {
+  color: rgb(54, 54, 54);
+}
+.contact-card-five {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact-form {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.input-name,
+.input-email,
+.input-subject,
+.input-message {
+  margin: 5px 0;
+  line-height: 1.5rem;
+  /* border-color: #96a3aa; */
+}
+.send {
+  line-height: 1.5rem;
+  border-radius: 0;
+}
+input,
+textarea {
+  border: 1px solid rgba(51, 49, 49, 0.247);
+  border-radius: 2px;
+  /* font-size: 12px; */
+}
+@media screen and (min-width: 350px) and (orientation: landscape) {
+  .contact-card-container {
+    flex-direction: row;
+    text-align: center;
+  }
+  .crd-one,
+  .crd-two,
+  .crd-three {
+    flex-basis: 33%;
+  }
+  .contact-form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rebeccapurple;
+  }
+  textarea {
+    height: 5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .contact-form {
+    display: grid;
+  }
+}
