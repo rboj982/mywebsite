@@ -699,19 +699,20 @@ li:hover {
 .input-email,
 .input-subject,
 .input-message {
-  margin: 5px 0;
+  margin: 3px 0;
   line-height: 1.5rem;
-  /* border-color: #96a3aa; */
 }
 .send {
   line-height: 1.5rem;
   border-radius: 0;
 }
+label {
+  display: none;
+}
 input,
 textarea {
   border: 1px solid rgba(51, 49, 49, 0.247);
   border-radius: 2px;
-  /* font-size: 12px; */
 }
 @media screen and (min-width: 350px) and (orientation: landscape) {
   .contact-card-container {
@@ -727,14 +728,87 @@ textarea {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid rebeccapurple;
   }
   textarea {
     height: 5rem;
   }
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
+  .contact-map-and-form-container {
+    display: flex;
+    flex-direction: row;
+    height: 75%;
+    padding-bottom: 50px;
+  }
+  .contact-card-maps {
+    width: 100%;
+  }
+  .contact-card-one,
+  .contact-card-two,
+  .contact-card-three {
+    padding: 2rem;
+  }
+  .crd-one {
+    flex-basis: 51%;
+  }
+  .crd-two,
+  .crd-three {
+    flex-basis: 25%;
+  }
   .contact-form {
+    width: 100%;
+    padding: 3rem;
     display: grid;
+    gap: 1rem;
+    grid-template-columns: 30% 20% 20% 30%;
+    grid-template-rows: 11% 11% 50% 12%;
+  }
+  .input-name {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .input-name:hover {
+    color: var(--clr-primery);
+    border: 1px solid blue;
+    transition: all linear 1s;
+  }
+  .input-email {
+    grid-column: 3/5;
+    grid-row: 1/2;
+  }
+  .input-email:hover {
+    color: var(--clr-primery);
+    border: 1px solid blue;
+    transition: all linear 1s;
+  }
+  .input-subject {
+    grid-column: 1/5;
+    grid-row: 2/3;
+  }
+  .input-subject:hover {
+    color: var(--clr-primery);
+    border: 1px solid blue;
+    transition: all linear 1s;
+  }
+  .input-message {
+    grid-column: 1/5;
+    grid-row: 3/4;
+  }
+  .input-message:hover {
+    color: var(--clr-primery);
+    border: 1px solid blue;
+    transition: all linear 1s;
+  }
+  .send {
+    grid-column: 2/4;
+    grid-row: 4/5;
+  }
+  .send:hover {
+    color: var(--clr-primery-light);
+    background: var(--clr-white);
+    transition: all linear 0.5s;
+  }
+  textarea {
+    height: 8rem;
   }
 }
